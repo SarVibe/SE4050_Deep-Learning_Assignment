@@ -46,11 +46,72 @@ The project will implement and compare:
 ```text
 Credit-Card-Fraud-Detection/
 │
-├── data/
 ├── notebooks/
+│   │
+│   ├── 01_preprocessing/
+│   │   └── Credit_Card_Fraud_Detection.ipynb
+│   │
+│   ├── 02_MLP/
+│   │   └── MLP_model.ipynb
+│   │
+│   ├── 03_CNN/
+│   │   └── CNN_model.ipynb
+│   │
+│   ├── 04_LSTM/
+│   │   └── LSTM_model.ipynb
+│   │
+│   └── 05_GRU/
+│       └── GRU_model.ipynb
+│
 ├── src/
+│   │
+│   ├── preprocessing.py
+│   ├── evaluation.py
+│   └── utils.py
+│
 ├── results/
+│   │
+│   ├── figures/
+│   │   │
+│   │   ├── MLP/
+│   │   │   ├── training_history.png
+│   │   │   ├── confusion_matrix.png
+│   │   │   └── roc_curve.png
+│   │   │
+│   │   ├── CNN/
+│   │   │   ├── training_history.png
+│   │   │   ├── confusion_matrix.png
+│   │   │   └── roc_curve.png
+│   │   │
+│   │   ├── LSTM/
+│   │   │   ├── training_history.png
+│   │   │   ├── confusion_matrix.png
+│   │   │   └── roc_curve.png
+│   │   │
+│   │   └── GRU/
+│   │       ├── training_history.png
+│   │       ├── confusion_matrix.png
+│   │       └── roc_curve.png
+│   │
+│   └── tables/
+│       ├── MLP_results.csv
+│       ├── CNN_results.csv
+│       ├── LSTM_results.csv
+│       ├── GRU_results.csv
+│       └── model_comparison.csv
+│
 ├── models/
+│   ├── MLP/
+│   │   └── MLP_best_model.keras
+│   │
+│   ├── CNN/
+│   │   └── CNN_best_model.keras
+│   │
+│   ├── LSTM/
+│   │   └── LSTM_best_model.keras
+│   │
+│   └── GRU/
+│       └── GRU_best_model.keras
+│
 ├── README.md
-├── requirements.txt
 └── .gitignore
